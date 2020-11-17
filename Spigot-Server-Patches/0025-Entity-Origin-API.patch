@@ -101,10 +101,10 @@ index ad8a506bb430b26fe147a657a2f826daf9bf4d45..ad4807e0bdd6409bd798f995da8f43ce
          if (i >= 0 && i < this.list.size()) {
              NBTBase nbtbase = (NBTBase) this.list.get(i);
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 11497c73f40b0c681585cf6efca99a63eeb62e76..37c4b75f4dcb490e243082897713583060f394b2 100644
+index f1aeae13624692b441aea01185ac932b49533e7d..46d5bcbd742cd75af9e123c4fc89c0eab165e644 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
-@@ -1133,6 +1133,11 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -1134,6 +1134,11 @@ public class WorldServer extends World implements GeneratorAccessSeed {
                  this.navigators.add(((EntityInsentient) entity).getNavigation());
              }
              entity.valid = true; // CraftBukkit

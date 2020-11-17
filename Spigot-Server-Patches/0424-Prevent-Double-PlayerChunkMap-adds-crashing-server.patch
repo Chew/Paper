@@ -26,10 +26,10 @@ index 512940ef8608d28c83a4a8d0777a99ebf25b4e8b..f839091ae4385e763a19d680585a9363
              EntityTypes<?> entitytypes = entity.getEntityType();
              int i = entitytypes.getChunkRange() * 16;
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 22b447ff847ea5bf9237fa738c25db4f84295133..ca4317d90bb5885ad2b1714e4c4e99902a9c23f6 100644
+index 74f85157c6cd86741baa5cf954a245249e7c0edf..fab15ac447166bc4f6cbf14ebdcbf5b9a99ca468 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
-@@ -1415,7 +1415,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -1416,7 +1416,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
                  }
              }
  
@@ -38,7 +38,7 @@ index 22b447ff847ea5bf9237fa738c25db4f84295133..ca4317d90bb5885ad2b1714e4c4e9990
              // CraftBukkit start - SPIGOT-5278
              if (entity instanceof EntityDrowned) {
                  this.navigators.add(((EntityDrowned) entity).navigationWater);
-@@ -1426,6 +1426,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -1427,6 +1427,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
                  this.navigators.add(((EntityInsentient) entity).getNavigation());
              }
              entity.valid = true; // CraftBukkit

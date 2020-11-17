@@ -5,10 +5,10 @@ Subject: [PATCH] Fix incorrect return for WorldServer#addAllEntitiesSafely
 
 
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 1642bb724032530f6ecbc849f449b93e7c450873..d3a6247d6c8e566be11b8b2a3520b001fbdc2d42 100644
+index 79c3cbc646b232057dd33418b56709a594974e41..a296401df96c7400e4ad6d3e91223b0e5cdfce5b 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
-@@ -1261,7 +1261,11 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -1262,7 +1262,11 @@ public class WorldServer extends World implements GeneratorAccessSeed {
          if (entity.cp().anyMatch(this::isUUIDTaken)) {
              return false;
          } else {

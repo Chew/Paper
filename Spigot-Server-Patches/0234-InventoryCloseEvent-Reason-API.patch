@@ -34,7 +34,7 @@ index cbffebfe323ff4ddec792c49ebc3391fc9ac35ac..73a33eff97d26e5b3542d787344013e1
          this.activeContainer = this.defaultContainer;
      }
 diff --git a/src/main/java/net/minecraft/server/EntityPlayer.java b/src/main/java/net/minecraft/server/EntityPlayer.java
-index 73479cf9e88567bf167dd5bffe4df75d2a424230..d4c907fb4914d3ffc3c361af08cfd709d3a88558 100644
+index 26f81c1af1dda7d0a78ca5815bfaf825ba913efd..415f0d74748484db0a211187a74b5d0b51ffe1cd 100644
 --- a/src/main/java/net/minecraft/server/EntityPlayer.java
 +++ b/src/main/java/net/minecraft/server/EntityPlayer.java
 @@ -415,7 +415,7 @@ public class EntityPlayer extends EntityHuman implements ICrafting {
@@ -130,10 +130,10 @@ index 3fa1ea2958bec57d40b702bdbdc511d67b165d7e..129f4095cb98e1e4295b9a12105d06e2
  
          PlayerQuitEvent playerQuitEvent = new PlayerQuitEvent(cserver.getPlayer(entityplayer), "\u00A7e" + entityplayer.getName() + " left the game");
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index fde791f4b1d80d3dab7d5a91d644295a80297f34..79d0f4eff913560d718132b50f63a79ff365938d 100644
+index baacc85379cd3cb18e4853fb452159eb46120dd5..66dbde02bb097cdf61e527c402d0441ca28885db 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
-@@ -1012,7 +1012,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -1013,7 +1013,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
          for (TileEntity tileentity : chunk.getTileEntities().values()) {
              if (tileentity instanceof IInventory) {
                  for (org.bukkit.entity.HumanEntity h : Lists.newArrayList(((IInventory) tileentity).getViewers())) {
@@ -142,7 +142,7 @@ index fde791f4b1d80d3dab7d5a91d644295a80297f34..79d0f4eff913560d718132b50f63a79f
                  }
              }
          }
-@@ -1070,7 +1070,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -1071,7 +1071,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
          // Spigot Start
          if (entity.getBukkitEntity() instanceof org.bukkit.inventory.InventoryHolder) {
              for (org.bukkit.entity.HumanEntity h : Lists.newArrayList(((org.bukkit.inventory.InventoryHolder) entity.getBukkitEntity()).getInventory().getViewers())) {

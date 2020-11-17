@@ -667,7 +667,7 @@ index 0000000000000000000000000000000000000000..944fd203e9f39d6c6fc9e270940c76c9
 +    }
 +}
 diff --git a/src/main/java/com/destroystokyo/paper/PaperConfig.java b/src/main/java/com/destroystokyo/paper/PaperConfig.java
-index 357856e5abcbc91452fa5b09643522f04843f71d..4479f74daef573bcbb6757186440bf47a3aef912 100644
+index da922f395f0fff0881ead893c900c5b2623f48f0..b4056cabb16f38ab8d45b887d9c4bf37b5b64bb4 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperConfig.java
 @@ -14,12 +14,15 @@ import java.util.concurrent.TimeUnit;
@@ -1680,7 +1680,7 @@ index 43f49a2a7f62227f35c309d4d63088a6e013481b..8703a001c9d2bf114b140a94f20e0cf7
              CrashReport crashreport = CrashReport.a(throwable, "Ticking entity");
              CrashReportSystemDetails crashreportsystemdetails = crashreport.a("Entity being ticked");
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 544186bbd32ddd1b209ec344a77dfa00ff70aea6..11497c73f40b0c681585cf6efca99a63eeb62e76 100644
+index 4b90ff8f567854543058cbf1b09ec3645783e97b..f1aeae13624692b441aea01185ac932b49533e7d 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -2,6 +2,8 @@ package net.minecraft.server;
@@ -1787,7 +1787,7 @@ index 544186bbd32ddd1b209ec344a77dfa00ff70aea6..11497c73f40b0c681585cf6efca99a63
  
          }
      }
-@@ -753,6 +767,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -754,6 +768,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
  
          if (!flag1) {
              org.bukkit.Bukkit.getPluginManager().callEvent(new org.bukkit.event.world.WorldSaveEvent(getWorld())); // CraftBukkit
@@ -1795,7 +1795,7 @@ index 544186bbd32ddd1b209ec344a77dfa00ff70aea6..11497c73f40b0c681585cf6efca99a63
              if (iprogressupdate != null) {
                  iprogressupdate.a(new ChatMessage("menu.savingLevel"));
              }
-@@ -762,7 +777,10 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -763,7 +778,10 @@ public class WorldServer extends World implements GeneratorAccessSeed {
                  iprogressupdate.c(new ChatMessage("menu.savingChunks"));
              }
  

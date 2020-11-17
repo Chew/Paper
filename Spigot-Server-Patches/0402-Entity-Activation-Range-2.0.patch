@@ -351,7 +351,7 @@ index f74a062f89a58942ce821f25dec2da46c31bb2a8..f229fb7409e509878af1dca1ecda058f
      public final org.spigotmc.SpigotWorldConfig spigotConfig; // Spigot
  
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index f79f04cd4d0c1f3518cbd08960206b06f9b819f6..7048f1e79380f2d36c944a125eea139a96cd91c9 100644
+index 3445da186e6d7d0438a7df1e14fca4cac944924f..d94574a2f469737195b88351f613c7be99a7c807 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -747,17 +747,17 @@ public class WorldServer extends World implements GeneratorAccessSeed {
@@ -428,10 +428,10 @@ index f79f04cd4d0c1f3518cbd08960206b06f9b819f6..7048f1e79380f2d36c944a125eea139a
 +                        entity.syncPositionOf(entity1);
 +                    }
 +                    // Paper end - EAR 2
+                     entity1.postTick(); // CraftBukkit
                      gameprofilerfiller.exit();
                  }
- 
-@@ -818,7 +836,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -819,7 +837,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
  
                          this.a(entity1, entity2);
                      }

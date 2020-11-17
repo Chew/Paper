@@ -3133,7 +3133,7 @@ index efba3b772238cabd5981978bee5d7dc76115f93f..74426693c47b6437a4597ddd1b961aae
          super(entitytypes, world);
          this.f = 5;
 diff --git a/src/main/java/net/minecraft/server/EntityPlayer.java b/src/main/java/net/minecraft/server/EntityPlayer.java
-index b9ed037ba86ea578d0cf5e0e43281d749981a842..829dd175930e87d1286be0a2265846d9c55e9389 100644
+index 5f44def6a5a7d9442a7f494d827e3467ecf953ed..74f5cdd4a73d33f593de86eaa0361c35e54e690d 100644
 --- a/src/main/java/net/minecraft/server/EntityPlayer.java
 +++ b/src/main/java/net/minecraft/server/EntityPlayer.java
 @@ -95,6 +95,8 @@ public class EntityPlayer extends EntityHuman implements ICrafting {
@@ -4496,7 +4496,7 @@ index 5719ef9714e9680596a08c42c33508c16c0e676a..bb0f30f182856d2701fde9b1a65eeb98
          return this.j.m();
      }
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 2a2e812d7a72077dc3b66ab4b5c6a00664c54287..544186bbd32ddd1b209ec344a77dfa00ff70aea6 100644
+index bbd0ea372d162383691838d3f0047718803f5f29..4b90ff8f567854543058cbf1b09ec3645783e97b 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -12,6 +12,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap.Entry;
@@ -4516,7 +4516,7 @@ index 2a2e812d7a72077dc3b66ab4b5c6a00664c54287..544186bbd32ddd1b209ec344a77dfa00
      boolean tickingEntities;
      private final MinecraftServer server;
      public final WorldDataServer worldDataServer; // CraftBukkit - type
-@@ -1565,7 +1566,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -1566,7 +1567,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
                  ObjectIterator objectiterator = spawnercreature_d.b().object2IntEntrySet().iterator();
  
                  while (objectiterator.hasNext()) {

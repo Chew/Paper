@@ -8,10 +8,10 @@ Vanilla will double add Spider Jockeys to the world, so ignore already added.
 Also add debug if something else tries to, and abort before world gets bad state
 
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index dc9c3086d2171b226f54668727625b673f29aaca..0c5299f97981a8394231a24b084b320cbecb0847 100644
+index acb844f62563dc7370c786c7a9706be5e34b126d..64e6c17151b91e07bde8fda69f584fad402c8576 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
-@@ -926,6 +926,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
+@@ -927,6 +927,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {
      // CraftBukkit start
      private boolean addEntity0(Entity entity, CreatureSpawnEvent.SpawnReason spawnReason) {
          org.spigotmc.AsyncCatcher.catchOp("entity add"); // Spigot
